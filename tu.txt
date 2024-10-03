@@ -22,8 +22,6 @@ local Tab = Window:MakeTab({
  PremiumOnly = false
 })
 
-SaveConfig = false, IntroText = "注入器："..identifyexecutor(),
-
 Tab:AddButton({
     Name = "导管中心",
     Callback = function()
