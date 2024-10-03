@@ -1,8 +1,6 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 
-local Window = OrionLib:MakeWindow({Name = "土脚本", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest", IntroText = "roblox启动"})
-
-SaveConfig = false, IntroText = "注入器："..identifyexecutor(), 
+local Window = OrionLib:MakeWindow({Name = "土脚本", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest", IntroText = "roblox启动"}) 
 
 OrionLib:MakeNotification({
  Name = "提示",
@@ -23,6 +21,8 @@ local Tab = Window:MakeTab({
  Icon = "rbxassetid://4483345998",
  PremiumOnly = false
 })
+
+SaveConfig = false, IntroText = "注入器："..identifyexecutor(),
 
 Tab:AddButton({
     Name = "导管中心",
