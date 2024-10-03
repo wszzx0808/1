@@ -2,6 +2,8 @@ local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shl
 
 local Window = OrionLib:MakeWindow({Name = "土脚本", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest", IntroText = "roblox启动"})
 
+SaveConfig = false, IntroText = "注入器："..identifyexecutor(), 
+
 OrionLib:MakeNotification({
  Name = "提示",
  Content = "进入土脚本成功",
