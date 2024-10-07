@@ -23,6 +23,14 @@ local Tab = Window:MakeTab({
 })
 
 Tab:AddButton({
+ Name = "销毁UI",
+ Callback = function()
+        print("button pressed")
+OrionLib:Destroy()
+   end    
+})
+
+Tab:AddButton({
  Name = "感谢使用土脚本",
  Callback = function()
         print("button pressed")
@@ -35,8 +43,6 @@ Tab:AddButton({
         print("button pressed")
    end    
 })
-
-Tab:AddLabel("测试")
 
 local Tab = Window:MakeTab({
  Name = "玩家通用",
