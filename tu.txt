@@ -36,6 +36,8 @@ Tab:AddButton({
    end    
 })
 
+Tab:AddLabel("测试")
+
 local Tab = Window:MakeTab({
  Name = "玩家通用",
  Icon = "rbxassetid://4483345998",
