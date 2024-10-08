@@ -1,0 +1,27 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+
+local Window = OrionLib:MakeWindow({Name = "土脚本启动页面", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+
+local Tab = Window:MakeTab({
+	Name = "启动",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddLabel("封号了该不负责")
+
+Tab:AddButton({
+	Name = "启动土脚本",
+	Callback = function()
+      		print("button pressed")
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/wszzx0808/tujiaobenyemian/refs/heads/main/tu.txt"))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "销毁UI",
+	Callback = function()
+      		print("button pressed")
+      		OrionLib:Destroy()
+  	end    
+})
